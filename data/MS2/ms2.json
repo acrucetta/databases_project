@@ -1,0 +1,28 @@
+[
+  {
+    "url": "create",
+    "response": 200
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "0"
+  },
+  {
+    "file": "small-insp.json"
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "9"
+  },
+  {
+    "url": "reset",
+    "response": 200
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "0"
+  }
+]

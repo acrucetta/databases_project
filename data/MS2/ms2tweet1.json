@@ -1,0 +1,27 @@
+[
+  {
+    "url": "create",
+    "response": 200
+  },
+  {
+    "file": "small-insp.json"
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "9"
+  },
+  {
+    "file": "tweet-very-small.json"
+  },
+  {
+    "url": "tweets/7",
+    "response": 200,
+    "jsonbody" : [{ "tkey": "2016-04-22_19:13:47-trippinpurpose", "match": "name" }]
+  },
+  {
+    "url": "tweets/1",
+    "response": 200,
+    "jsonbody" : [{ "tkey": "2016-04-22_19:31:22-JustinsSteady", "match": "geo" }]
+  }
+]

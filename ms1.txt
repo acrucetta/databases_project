@@ -1,0 +1,11 @@
+Description of division of labor on MS1
+
+Jacob and Andres both spent time reading the docs and getting the DB/web service 
+up and running in Step 1 together.  
+
+Jacob (mostly) wrote the functions for Step 2.
+
+Andres (mostly) wrote the functions for Steps 3-4.
+
+Both Jacob and Andres tested the results and reviewed the code.
+

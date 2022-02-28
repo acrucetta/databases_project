@@ -1,0 +1,60 @@
+{
+  "post_path": "tweet",
+  "response": 201,
+  "values": [
+    {
+      "key": "2016-04-22_19:18:07-revivaIjustin",
+      "author": "revivaIjustin",
+      "created_at": "2016-04-22 19:18:07",
+      "source": "Twitter for iPhone",
+      "lat": "",
+      "long": "",
+      "text": "RT @taylorcxncha: Chicago fans need to chill pls"
+    },
+    {
+      "key": "2016-04-22_19:13:47-trippinpurpose",
+      "author": "trippinpurpose",
+      "created_at": "2016-04-22 19:13:47",
+      "source": "Twitter for iPhone",
+      "lat": "",
+      "long": "",
+      "text": "Chowing at Mobil Gas Station. Yum!"
+    },
+      {
+    "key": "2016-04-22_19:19:10-MLB_ChicagoCubs",
+    "author": "MLB_ChicagoCubs",
+    "created_at": "2016-04-22 19:19:10",
+    "source": "dlvr.it",
+    "lat": "",
+    "long": "",
+    "text": "#Apparel 2016 CHICAGO #Cubs CONVENTION SOUVENIR PACKAGE (FREE SHIPPING!!) https://t.co/IliEJENNGb #Souvenir #Deals"
+  },
+   {
+    "key": "2016-04-22_19:20:06-katbyrd41",
+    "author": "katbyrd41",
+    "created_at": "2016-04-22 19:20:06",
+    "source": "TweetCaster for Android",
+    "lat": "",
+    "long": "",
+    "text": "RT @kgosztola: So far, Rahm Emanuel has disregarded about 70% of Chicago Police Accountability Task Force's recommendations https://t.co/zQ\u2026"
+  },
+      {
+    "key": "2016-04-22_19:20:37-_KeysthaGod",
+    "author": "_KeysthaGod",
+    "created_at": "2016-04-22 19:20:37",
+    "source": "Twitter for iPhone",
+    "lat": "",
+    "long": "",
+    "text": "RT @pullupifubad: it's so crazy seein the word Thot everywhere knowin that it originated in Chicago"
+  },
+  {
+    "key": "2016-04-22_19:31:22-JustinsSteady",
+    "author": "JustinsSteady",
+    "created_at": "2016-04-22 19:31:22",
+    "source": "Twitter for Android",
+    "lat": "41.7834",
+    "long": "-87.6442",
+    "text": "I thought Dallas was a mess https://t.co/dn8vCbg6Rv"
+  }
+  ]
+}

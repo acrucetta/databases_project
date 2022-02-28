@@ -1,0 +1,38 @@
+INSERT INTO ri_restaurants (
+    name,
+    facility_type,
+    address,
+    city,
+    state,
+    zip,
+    latitude,
+    longitude
+) VALUES (
+    'DAMEN DINING',
+    'Restaurant',
+    '1000-1010 W WAVELAND AVE',
+    'CHICAGO',
+    'IL',
+    '60613',
+    41.94915225433,
+    -87.6544465886
+);
+
+INSERT INTO ri_inspections (
+    id,
+    risk,
+    inspection_date,
+    inspection_type,
+    results,
+    violations,
+    restaurant_id
+) VALUES (
+    '1751552',
+    'Risk 1 (High)',
+    '2016-04-13',
+    'License',
+    'Pass',
+    '32. FOOD AND NON-FOOD CONTACT SURFACES PROPERLY DESIGNED, CONSTRUCTED AND MAINTAINED - Comments: OBSERVED RUSTED FOOD STORAGE SHELVING INSIDE WALK-IN COOLER LOCATED AT THE ROOFTOP. MUST REPAINT OR REPLACE. | 38. VENTILATION: ROOMS AND EQUIPMENT VENTED AS REQUIRED: PLUMBING: INSTALLED AND MAINTAINED - Comments: OBSERVED EXPOSED HAND WASHING DRAINING SLOW IN KITCHEN FOOD PREP AREA LOCATED AT THE ROOFTOP. MUST REPAIR AND MAINTAIN. \nVENTILATION NOT WORKING AT THE ROOFTOP WASHROOMS. MUST REPAIR AND MAINTAIN.',
+    1
+);
+

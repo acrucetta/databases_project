@@ -1,0 +1,19 @@
+[
+  {
+    "url": "create",
+    "response": 200
+  },
+  {
+    "url": "txn/2",
+    "response": 200
+  },
+  {
+    "file": "small-insp.json"
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "9"
+  }
+
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "url": "create",
+    "response": 200
+  },
+  {
+    "url": "txn/7",
+    "response": 200
+  },
+  {
+    "file": "small-insp.json"
+  },
+  {
+    "url": "abort",
+    "response": 200
+  },
+  {
+    "url": "count",
+    "response": 200,
+    "body" : "7"
+
+  }
+
+]

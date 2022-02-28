@@ -1,0 +1,34 @@
+MS3 write-up
+
+1. Describe your record linkage model (i.e. the functions you are using and how 
+you are combining their output scores) 
+
+We used a simple linear combination of the Jaro-winkler similarity score, applied
+to several different attributes in the following way:
+
+final_score = 0.45 * sim_score(name) + 0.45 * sim_score(address) 
+            + 0.1 * sim_score(zip)
+            
+
+
+2. Explain simple heuristic for finding/creating authoritative record.
+
+For finding/creating an authoritative record from a group of linked records, we
+selected the record with the highest average similarity score to the other records.
+
+For example, given the linked records A, B, and C, and similarity scores:
+
+sim(A, B) = 0.9
+sim(B, C) = 0.7
+sim(A, C) = 0.8
+
+Each record has the following average similarity:
+
+avg(A) = 0.85
+avg(B) = 0.80
+avg(C) = 0.75
+
+In this case, we set A to be the authoritative record.
+
+In cases where just 2 records match, we simply select the first record, as we do 
+not have other information to break the tie.

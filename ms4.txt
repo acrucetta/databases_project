@@ -1,0 +1,52 @@
+MS4 Write-up
+
+How we created the blocks:
+We created the blocks using the zip code of each record. We assumed
+that if two records have different names but are the same restaurant
+they will most likely be within the same zip code. By testing with and without 
+the blocking, we get the same matches, so it appears to be effective.
+
+How we created the index:
+We based the index on the name of the record. Since many records
+will have similar IDs then indexing by name will speed up getting the
+records. 
+
+Average of results across MS3 and MS4:
+Based of the different test results, it seems like the blocking 
+didn't have a particularly different effect on the speed of the test.
+My assumption is that there were not as many records or the indexing 
+didn't contribute as much to the speed of the test. It seems like the more 
+commits issued in the blocking-based method counterbalances the speed increases 
+from blocking.  We expect that with more records, there would be greater speed 
+improvements from the blocking.
+
+Tests:
+100 File
+Average of results across NonBlocking: 0.47s
+Average of results across Blocking: 0.48s
+
+1000 File
+Average of results across NonBlocking: 1.87s
+Average of results across Blocking: 1.88s
+
+100 File: 
+No Blocking:
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.46s user 0.10s system 58% cpu 0.966 total
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.48s user 0.11s system 59% cpu 1.002 total
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.48s user 0.11s system 57% cpu 1.021 total
+
+Blocking:
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.50s user 0.12s system 55% cpu 1.121 total
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.48s user 0.11s system 56% cpu 1.048 total
+python3 client/loader2.py -f data/MS3/ms3-100.json  0.50s user 0.12s system 56% cpu 1.079 total
+
+1000 File:
+No Blocking:
+python3 client/loader2.py -f data/MS4/ms4.json  1.87s user 0.38s system 51% cpu 4.359 total
+python3 client/loader2.py -f data/MS4/ms4.json  1.91s user 0.39s system 51% cpu 4.456 total
+python3 client/loader2.py -f data/MS4/ms4.json  1.84s user 0.38s system 51% cpu 4.295 total
+
+Blocking:
+python3 client/loader2.py -f data/MS4/ms4.json  1.67s user 0.31s system 51% cpu 3.842 total
+python3 client/loader2.py -f data/MS4/ms4.json  2.07s user 0.46s system 50% cpu 5.033 total
+python3 client/loader2.py -f data/MS4/ms4.json  1.92s user 0.40s system 51% cpu 4.477 total
